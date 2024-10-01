@@ -3,9 +3,9 @@ def Fun(a):
   result = {}
   for i in a:
     if i not in result:
-      result[i] = a.append(i)
+      result[i] = a.count(i)
   for key, value in result.items():
-    print(f"{key}, {value}")
+    print(f"{key}: {value}")
 
 b = int(input(":"))
 a = []
@@ -14,5 +14,3 @@ for i in range(b):
   a.append(c)
 
 Fun(a)
-  
-  
